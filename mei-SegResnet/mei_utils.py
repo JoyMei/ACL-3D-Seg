@@ -2,10 +2,6 @@ import os
 import torch
 from monai.inferers import sliding_window_inference
 
-from monai.transforms import (
-    MapTransform,
-)
-
 def create_file(foldername):
     if not os.path.exists(foldername):
         os.mkdir(foldername)
@@ -27,7 +23,6 @@ def inference(input, roi_size, model, VAL_AMP):
             return _compute(input)
     else:
         return _compute(input)
-    
 
 if __name__ == "__main__":
     print('utils')

@@ -6,4 +6,17 @@
 
 ![v21-resnet](README.assets/v21-resnet.png)
 
-![v21-val](README.assets/v21-val.png)
+
+
+![img-segtesnet](README.assets/img-segtesnet.png)
+
+
+
+
+
+![img-erosion](README.assets/img-erosion.png)
+
+
+
+
+

@@ -35,7 +35,7 @@ def train_and_validate(args, model, train_loader, val_loader,train_ds):
     scaler = torch.cuda.amp.GradScaler()
 
     loss_function = DiceLoss(smooth_nr=0, smooth_dr=1e-5, squared_pred=True, to_onehot_y=False, sigmoid=True)
-    optimizer = torch.optim.Adam(model.parameters(), 1e-4, weight_decay=1e-5)
+    optimizer = torch.optim.Adam(model.parameters(), 1e-4, weight_decay=0)
     dice_metric = DiceMetric(include_background=True, reduction="mean")
     dice_metric_batch = DiceMetric(include_background=True, reduction="mean_batch")
 
